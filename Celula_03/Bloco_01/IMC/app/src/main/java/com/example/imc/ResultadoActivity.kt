@@ -2,7 +2,6 @@ package com.example.imc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_resultado2.*
 
 class ResultadoActivity : AppCompatActivity() {
@@ -12,9 +11,12 @@ class ResultadoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_resultado2)
 
         val imc = intent.getParcelableExtra<IMC>("value")
-        titleDensidadeCorporal.text = imc.nome.toString()
-        textViewHeaderDensidadeCorporal.text = imc.calcular()
-        textViewResultadoDensidadeCorporal.text = imc.imc.toString()
+        txtNome.text = imc.nome.toString()
+        txtResult.text = imc.calcular()
+        txtIMC.text = imc.imc.toString()
+        txtPeso.text = imc.peso.toString()
+        txtAltura.text = imc.altura.toString()
+
 
 
     }

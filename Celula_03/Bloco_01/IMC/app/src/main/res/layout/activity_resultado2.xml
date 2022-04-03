@@ -47,7 +47,7 @@
 
 
                 <TextView
-                    android:id="@+id/titleDensidadeCorporal"
+                    android:id="@+id/txtNome"
                     style="@style/styleTituloSecao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,48 +58,82 @@
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <TextView
-                    android:id="@+id/textViewHeaderDensidadeCorporal"
+                    android:id="@+id/txtIMC"
                     style="@style/styleHeaderResultado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/labelTextViewHeaderDensidadeCorporal"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp" />
 
                 <TextView
-                android:id="@+id/textViewResultadoDensidadeCorporal"
-                style="@style/styleValorResultado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:focusable="true"
-                android:text=""
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary" />
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="------------------------------" />
 
                 <TextView
-                    android:id="@+id/textViewPeso"
+                    android:id="@+id/labelPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peso Informado:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPeso"
                     style="@style/styleValorResultado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:focusable="true"
-                    android:text=""
+                    android:text="Peso"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary" />
 
                 <TextView
-                    android:id="@+id/textViewResultadoDensidadeCorporal"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Altura Informada:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAltura"
                     style="@style/styleValorResultado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:focusable="true"
-                    android:text=""
+                    android:text="Altura"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary" />
 
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="------------------------------" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Resultado:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtResult"
+                    style="@style/styleValorResultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:focusable="true"
+                    android:text="Resultado"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary" />
 
 
             </LinearLayout>
